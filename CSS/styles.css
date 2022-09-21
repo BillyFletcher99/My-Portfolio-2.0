@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+html {
+  background: black;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+/*==== Akkora logo ====*/
+.akkora{
+    font-family: "Noto Sans TC";
+    font-size: 2rem;
+    letter-spacing: 25px;
+    color: #1f0e28;
+    border: 3px solid rgba(22, 182, 212, 0.3);
+    padding: 20px;
+    position: relative;
+    width: 300px;
+    height: 100px;
+    cursor: pointer;
+    animation: blink 8s infinite;
+}
+#akkora-span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+@keyframes blink {
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+      color: #1f0e28;
+      text-shadow: none;
+      box-shadow: none;
+      border: 3px solid rgba(22, 182, 212, 0.3);
+    }
+    
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 100% {
+      border: 3px solid rgba(22, 182, 212, 1);
+      color: #ffc2fd;
+    text-shadow: 0 0 10px #f205ae,
+                 0 0 20px #f205ae,
+                 0 0 40px #f205ae,
+                 0 0 80px #f205ae,
+                 0 0 160px #f205ae,
+                 0 0 320px #f205ae,
+                 0 0 640px #f205ae;
+    box-shadow: inset 0 0 10px rgba(113,213,255, 0.5),
+                inset 0 0 20px rgba(113,213,255, 0.5),
+                0 0 10px rgba(113,213,255, 0.3),
+                0 0 20px rgba(113,213,255, 0.3),
+                0 0 40px rgba(113,213,255, 0.3),
+                0 0 80px rgba(113,213,255, 0.3),
+                0 0 160px rgba(113,213,255, 0.3),
+                0 0 320px rgba(113,213,255, 0.3)
+  }
+    }
+/*==== NavBar ====*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #150220;
+    box-shadow: 10px 10px 67px 25px rgba(0,0,0,0.33) inset;
+    -webkit-box-shadow: 10px 10px 67px 25px rgba(0,0,0,0.33) inset;
+    -moz-box-shadow: 10px 10px 67px 25px rgba(0,0,0,0.33) inset;
+    border: 6px inset #300350;
+}
+a{
+    text-decoration: none;
+}
+.nav-area{
+    list-style: none;
+}
+.nav-area li{
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+.nav-area li a{
+    transition: .3s;
+    color: #fff;
+    font-family: "Noto Sans TC";
+    letter-spacing: 4px;
+}
+.nav-area li a:hover{
+    color: #d22938;
+}
+.btn-3 {
+    background: #00aced;
+     box-shadow:  0 0 5px #00aced,  0 0 8px #00aced;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    z-index: 2;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    left: 370px;
+    position: absolute;
+    top: 48px;
+  }
+  .btn-3:hover{
+    background-color: transparent;
+    color: #00aced;
+    box-shadow: 0 5px 3px -3px #00aced, 0 -5px 3px -3px #00aced,
+      0 5px 3px -3px #00aced, 0 -5px 3px -3px #00aced;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 50%;
+    right: 0;
+    z-index: -1;
+  }
+  .btn-3:before {
+    top: 0;
+  }
+  .btn-3:after {
+    bottom: 0;
+  }
+  .btn-3:hover:before,
+  .btn-3:hover:after {
+    height: 0;
+    background-color: #00aced;
+  }
+
+/*==== HomePage ====*/
+.home{
+    height: 100vh;
+    font-family: sans-serif;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 20%, #002a2a, #000);
+}
+.welcome{
+  text-align: center;
+  position: absolute;
+  color: #92e5a1;
+  top: 155px;
+}
