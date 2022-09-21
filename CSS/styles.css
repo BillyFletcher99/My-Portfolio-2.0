@@ -18,7 +18,11 @@ body {
   padding: 0;
   height: 100%;
 }
-/*==== Akkora logo ====*/
+/*
+#################################################
+A K K O R A - S E C T I O N 
+#################################################
+*/
 .akkora{
     font-family: "Noto Sans TC";
     font-size: 2rem;
@@ -66,7 +70,11 @@ body {
                 0 0 320px rgba(113,213,255, 0.3)
   }
     }
-/*==== NavBar ====*/
+/*
+#################################################
+N A V B A R - S E C T I O N 
+#################################################
+*/
 header{
     display: flex;
     justify-content: space-between;
@@ -139,7 +147,11 @@ a{
     background-color: #00aced;
   }
 
-/*==== HomePage ====*/
+/*
+#################################################
+H O M E P A G E - S E C T I O N 
+#################################################
+*/
 .home{
     height: 100vh;
     font-family: sans-serif;

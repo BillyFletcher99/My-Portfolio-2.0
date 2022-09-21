@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="portfolio.html"></script>
     <link rel="stylesheet" href="CSS\portfolio.css">
     <title>Document</title>
 </head>
 <body>
-       <!--Portfolio-->
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul class="nav-area">
+                    <li class="navbar-links-portfolio"><a href="index.html">Home</a></li>
+                    <li class="navbar-links-portfolio"><a href="#">Pricing</a></li>
+                    <li class="navbar-links-portfolio"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="navbar-links-portfolio"><a href="#">Contact Us</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Portfolio-->
    <section class="portfolio">
     <div class="container">
 
-        <h1 class="heading">Developer Portfolio <img src="img\icons8-vaporwave-48.png" alt="vaporwave-Icon" class="vaporwave-Icon"></h1>
+        <h1 class="heading-portfolio">Developer Portfolio</h1>
+        <div class="vaporwave-img">
+            <img src="img\icons8-vaporwave-48.png" alt="vaporwave-Icon" class="vaporwave-Icon">
+        </div>
     
         <div class="gallery">
 
@@ -60,27 +77,41 @@
 <section class="flex-table-outer">
     <div class="flex-table">
 <table>
-    <thead>
+    <thead style="color: #ffffff;">
         <tr>
-            <th>DATE</th>
-            <th>ASSIGMENT</th>
-            <th>PROJECT</th>
+            <th class="table-title">DATE</th>
+            <th class="text-center table-title">ASSIGMENT</th>
+            <th class="table-title">PROJECT</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><span>Type of Food</span> Slice of Pizza</td>
-            <td><span>Calories</span> 450</td>
-            <td><span>Tasty Factor</span> 95%</td>
+            <td>09.12.2022</td>
+            <td class="text-center">Rabit-Habit</td>
+            <td><a class="project-links" href="https://rabit-habit.herokuapp.com/login" target="_blank">Rabit-Habit-Homepage</a></td>
         </tr>
         <tr>
-            <td><span>Type of Food</span> Hamburger</td>
-            <td><span>Calories</span> 350</td>
-            <td><span>Tasty Factor</span> 87%</td>
+            <td>06.20.2022<br></td>
+            <td class="text-center">Website Portfolio Alpha</td>
+            <td><a class="project-links" href="https://billyfletcher99.github.io/My-Personal-web-development-page/" target="_blank">First Attempt Portfolio</a></td>
+        </tr>
+        <tr>
+            <td>07.22.2022<br></td>
+            <td class="text-center">Random-Password-Generator</td>
+            <td><a class="project-links" href="https://billyfletcher99.github.io/Random-Password-Generator/" target="_blank">Generate Rando Password</a></td>
+        </tr>
+        <tr>
+            <td>08.01.2022<br></td>
+            <td class="text-center">Weather-Channel-API</td>
+            <td><a class="project-links" href="https://billyfletcher99.github.io/Weather-Channel-API/" target="_blank">Climate-Change</a></td>
         </tr>
     </tbody>
 </table>
     </div>
 </section>
+
+<footer class="footer">
+    
+</footer>
 </body>
 </html>

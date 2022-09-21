@@ -89,19 +89,78 @@ Remove or comment-out the code block below to see how the browser will fall-back
 		margin: 0;
 	}
 }
-.vaporwave-Icon{
-    top: 73px;
-    position: absolute;
-    right: 425px;
-
-}
-
 
 /*
 #################################################
 P O R T F O L I O - S E C T I O N - I N F O
 #################################################
 */
+header{
+    flex-wrap: wrap;
+    display: flex !important;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 0.5REM !important;
+    background-color: rgba(11,11,11,0.23);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 20px 0px rgb(0,0,0);
+    border-bottom-right-radius: 20px;
+}
+a{
+    text-decoration: none;
+}
+.nav-area{
+    list-style: none;
+}
+.nav-area li{
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+.nav-area li a{
+    transition: .3s;
+    color: #fff;
+    font-family: "Noto Sans TC";
+    letter-spacing: 2px;
+    display: inline-block;
+}
+.nav-area li a:hover{
+    color: #d22938;
+}
+.heading-portfolio{
+    padding: 3.5rem 0;
+	color: #92e5a1;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 700;
+    font-size: calc(.5em + 1.4vw);
+    letter-spacing: calc(.2em + 1.3vw);
+    font-family: 'Lexend Giga', sans-serif;
+    line-height: 1.2;
+    text-align: center !important;
+    text-shadow:
+    0 0 5px #92e5a1,
+    0 0 10px #92e5a1,
+    0 0 20px #92e5a1,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 1000px #0ff,
+    0 0 500px #0ff;
+}
+.vaporwave-img{
+    display: flex;
+    padding-bottom: 50px;
+}
+.vaporwave-Icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    padding-bottom: 50px;
+}
 .flex-table-outer{
     padding: 2rem;
     justify-content: center !important;
@@ -121,11 +180,12 @@ table tr {
 }
 table th, table td {
     letter-spacing: 3px;
-    color: rgba(255,255,255,0.8);
+    color: #fff !important;
     padding: 5px;
     -webkit-border-radius: 25px 25px 25px 25px;
     -moz-border-radius: 25px 25px 25px 25px;
-    border: 2px solid #d0ddc0;
+    border-width: 0px;
+    font-size: 1.1rem;
 }
 table td span {
     background: #eee;
@@ -138,6 +198,13 @@ table td span {
     text-transform: uppercase;
     top: 0;
     left: 0;
+}
+.project-links{
+    text-decoration: none;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(255,255,255,0.8);
 }
 
 /* Simple CSS for flexbox table on mobile */
@@ -164,4 +231,21 @@ table td span {
     table td span {
         display: block;
     }
+}
+/*
+#################################################
+F O O T E R - S E C T I O N 
+#################################################
+*/
+.footer{
+    padding-top: 2.5rem;
+    overflow: hidden !important;
+    background: var(--body);
+    font-family: Dongle, sans-serif;
+    font-size: .75rem;
+    color: white;
+    min-height: 1em;
+    vertical-align: middle;
+    cursor: wait;
+    opacity: 1;
 }
